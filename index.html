@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="image.css">
+    <title>Image Gallery</title>
+</head>
+
+<body>
+    <!-- Heading Name -->
+    <div class="heading">
+        <h1>Image Gallery</h1>
+    </div>
+
+    <!-- Image Gallery section all images in one div -->
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src=
+"https://images.pexels.com/photos/18578652/pexels-photo-18578652/free-photo-of-shiva-statue-under-storm-clouds.jpeg?auto=compress&cs=tinysrgb&w=800"
+                onclick="openModal(
+'https://images.pexels.com/photos/18578652/pexels-photo-18578652/free-photo-of-shiva-statue-under-storm-clouds.jpeg?auto=compress&cs=tinysrgb&w=800')"
+                alt="Image 1">
+        </div>
+    
+         <div class="gallery-item">
+            <img src=
+"https://images.pexels.com/photos/7170023/pexels-photo-7170023.jpeg?auto=compress&cs=tinysrgb&w=800"
+                onclick="openModal(
+'https://images.pexels.com/photos/7170023/pexels-photo-7170023.jpeg?auto=compress&cs=tinysrgb&w=800')"
+                alt="Image 5">
+        </div>
+        <div class="gallery-item">
+            <img src=
+"https://images.pexels.com/photos/2418400/pexels-photo-2418400.jpeg?auto=compress&cs=tinysrgb&w=800"
+                onclick="openModal(
+'https://images.pexels.com/photos/2418400/pexels-photo-2418400.jpeg?auto=compress&cs=tinysrgb&w=800')"
+                alt="Image 6">
+        </div>
+        <div class="gallery-item">
+            <img src=
+"https://images.pexels.com/photos/22043805/pexels-photo-22043805/free-photo-of-desert-mountains-in-himachal-prades.jpeg?auto=compress&cs=tinysrgb&w=800"
+                onclick="openModal(
+'https://images.pexels.com/photos/22043805/pexels-photo-22043805/free-photo-of-desert-mountains-in-himachal-prades.jpeg?auto=compress&cs=tinysrgb&w=800')"
+                alt="Image 7">
+        </div>
+        <div class="gallery-item">
+            <img src=
+    "https://images.pexels.com/photos/17004229/pexels-photo-17004229/free-photo-of-boats-on-the-shore-of-the-nainital-lake-in-india.jpeg?auto=compress&cs=tinysrgb&w=800"
+                onclick="openModal(
+    'https://images.pexels.com/photos/17004229/pexels-photo-17004229/free-photo-of-boats-on-the-shore-of-the-nainital-lake-in-india.jpeg?auto=compress&cs=tinysrgb&w=800')"
+                alt="Image 4">
+        </div> 
+        <div class="gallery-item">
+            <img src=
+"https://images.pexels.com/photos/7187718/pexels-photo-7187718.jpeg?auto=compress&cs=tinysrgb&w=800"
+                onclick="openModal(
+'https://images.pexels.com/photos/7187718/pexels-photo-7187718.jpeg?auto=compress&cs=tinysrgb&w=800')"
+                alt="Image 8">
+        </div>
+        <div class="gallery-item">
+            <img src=
+"https://images.pexels.com/photos/13819269/pexels-photo-13819269.jpeg?auto=compress&cs=tinysrgb&w=800"
+                onclick="openModal(
+'https://images.pexels.com/photos/13819269/pexels-photo-13819269.jpeg?auto=compress&cs=tinysrgb&w=800')"
+                alt="Image 3">
+        </div>
+     
+
+        <div class="gallery-item">
+            <img src=
+    "https://images.pexels.com/photos/12087907/pexels-photo-12087907.jpeg?auto=compress&cs=tinysrgb&w=800"
+                onclick="openModal(
+    'https://images.pexels.com/photos/12087907/pexels-photo-12087907.jpeg?auto=compress&cs=tinysrgb&w=800')"
+                alt="Image 2">
+        </div>
+    </div>
+   
+      <!-- Modal for Image Display -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <!-- JavaScript for Modal -->
+    <script>
+        function openModal(src) {
+            document.getElementById("modalImage").src = src;
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
